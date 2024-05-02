@@ -11,6 +11,7 @@ import { WarhawkComponent } from './warhawk/warhawk.component';
 import { PollinateComponent } from './pollinate/pollinate.component';
 import { WebDesignComponent } from './web-design/web-design.component';
 import { NewworldComponent } from './newworld/newworld.component';
+import { CatgameComponent } from './catgame/catgame.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -24,7 +25,8 @@ const routes: Routes = [
   { path: 'warhawk-redesign', component: WarhawkComponent },
   { path: 'pollinate', component: PollinateComponent },
   { path: 'web-design', component: WebDesignComponent },
-  { path: 'new-world', component: NewworldComponent }
+  { path: 'new-world', component: NewworldComponent },
+  { path: 'catching-shrooms', component: CatgameComponent }
 ];
 
 const routerOptions: ExtraOptions = {

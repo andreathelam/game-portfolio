@@ -23,6 +23,7 @@ import { WarhawkComponent } from './warhawk/warhawk.component';
 import { PollinateComponent } from './pollinate/pollinate.component';
 import { WebDesignComponent } from './web-design/web-design.component';
 import { NewworldComponent } from './newworld/newworld.component';
+import { CatgameComponent } from './catgame/catgame.component';
 
 @NgModule({
   declarations: [
@@ -42,6 +43,7 @@ import { NewworldComponent } from './newworld/newworld.component';
     PollinateComponent,
     WebDesignComponent,
     NewworldComponent,
+    CatgameComponent,
   ],
   imports: [
     BrowserModule,

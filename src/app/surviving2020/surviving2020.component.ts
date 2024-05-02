@@ -18,7 +18,7 @@ export class Surviving2020Component implements OnInit {
   constructor(private data: MenuDataService) { }
 
   ngOnInit(): void {
-    this.data.changeName(["New World", "#dddddd", "new-world"], ["Project Cupid", "#CFB5D0", "project-cupid"], ["Puzzling Potions","#F5B971", "puzzling-potions"], ["Stardew Journal", "#CFB5D0", "stardew-journal"])
+    this.data.changeName(["New World", "#dddddd", "new-world"], ["CATching Shrooms", "#dacfee", "cat-game"], ["Puzzling Potions","#F5B971", "puzzling-potions"], ["Pollinate", "#A9C5A8", "pollinate"])
     this.subscription = this.data.currentN1.subscribe(n1 => this.n1 = n1)
     this.subscription = this.data.currentN2.subscribe(n2 => this.n2 = n2)
     this.subscription = this.data.currentN3.subscribe(n3 => this.n3 = n3)
