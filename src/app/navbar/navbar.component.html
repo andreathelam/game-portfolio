@@ -17,7 +17,7 @@
              <a class="dropbtn" [routerLink]="['/home']" fragment="projects" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact: true}" title="link to projects section"><span>WORK</span></a>
               <div class="dropdown-content">
                 <a [routerLink]="['/home']" fragment="projects" title="link to projects section"><span>PROJECTS</span></a>
-                <a [routerLink]="['/home']" fragment="graphics" title="link to graphics section"><span>GRAPHICS</span></a>
+                <a [routerLink]="['/home']" fragment="graphics" title="link to graphics section"><span>PLAYGROUND</span></a>
               </div>
             </div>
           </li>
@@ -50,7 +50,7 @@
         <nav class="navmenu_overlay">
           <ul>
             <li (click)="close_menu()"><a [routerLink]="['/home']" fragment="projects" title="link to projects section"><span>PROJECTS</span></a></li>
-            <li (click)="close_menu()"><a [routerLink]="['/home']" fragment="graphics" title="link to projects section"><span>GRAPHICS</span></a></li>
+            <li (click)="close_menu()"><a [routerLink]="['/home']" fragment="graphics" title="link to projects section"><span>PLAYGROUND</span></a></li>
             <li (click)="close_menu()"><a [routerLink]="['/about']" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact: true}" title="link to about page"><span>ABOUT</span></a></li>
             <li><a href="assets/Lam_Andrea_Resume_2024.pdf" target="_blank" title="link to Andrea's resume"><span>RESUME</span></a></li>
           </ul>

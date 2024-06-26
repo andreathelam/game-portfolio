@@ -5,16 +5,19 @@
 
 <body>
 
-<div class="page_container">
-
   <div id="pop_up" onclick="closeImg(this)">
 
-   <div id="image_enlarged">
-      <img id="imgsrc"/>
-      <img id="close_btn" src="assets/close_btn.png">
-      <!-- <h2 id="close_btn"><strong>x</strong></h2> -->
-    </div>
-  </div>
+    <div id="image_enlarged">
+       <img id="imgsrc"/>
+       <div id="close_btn">
+         <img src="assets/close_btn.png">
+       </div>
+       <!-- <h2 id="close_btn"><strong>x</strong></h2> -->
+     </div>
+   </div>
+ 
+
+<div class="page_container">
 
 
   <div class="title_name">
@@ -119,7 +122,7 @@
         </div>
       </div>
       <ul class="project_tags">
-        <li>MOBILE UI/UX&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;1ST PLACE DESIGNATHON</li>
+        <li>MOBILE APP UI/UX&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;1ST PLACE DESIGNATHON</li>
       </ul>
     </div>
 
@@ -137,7 +140,7 @@
         </div>
       </div>
       <ul class="project_tags">
-        <li>MOBILE UI/UX&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;PIXEL ART&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;BRANDING</li>
+        <li>MOBILE APP UI/UX&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;PIXEL ART&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;BRANDING</li>
       </ul>
     </div>
 
@@ -193,13 +196,13 @@
 
 <section class="art_container" id="graphics">
   
-  <h2>Graphics</h2>
+  <h2>Playground</h2>
   
   <div class="graphics_row">
     <!--div class="portfolio-single" ontouchstart="this.classList.toggle('hover');"-->
-    <div class="portfolio-single" id="img_cursor" onclick="enlargeImg(document.getElementById('pop_up'), 'assets/graphics/UCHI_enlarged.png')">
+    <div class="portfolio-single" id="img_cursor" onclick="enlargeImg(document.getElementById('pop_up'), 'assets/playground/room.png')">
       <figure>
-        <img src="assets/graphics/UCHI.png" alt="University of California Holiday Invitational" />
+        <img src="assets/playground/room_thumbnail.png" alt="University of California Holiday Invitational" />
       </figure>
     </div>
     
@@ -210,18 +213,15 @@
     </div> -->
   
 
-    <div class="portfolio-single" id="img_cursor" onclick="enlargeImg(document.getElementById('pop_up'), 'assets/graphics/ow_roster_enlarged.png')">
+    <div class="portfolio-single" id="img_cursor" >
       <figure>
-        <img src="assets/graphics/ow_roster.png" alt="Overwatch Roster" />
-        <figcaption>
-          <h4>Overwatch Roster</h4>
-        </figcaption>
+        <a href="https://andreathelam.itch.io/duck" target="_blank"><img src="assets/playground/duck_thumbnail.png" alt="duck game" /></a>
       </figure>
     </div>
 
-    <div class="portfolio-single" id="img_cursor" onclick="enlargeImg(document.getElementById('pop_up'), 'assets/graphics/lol_roster_enlarged.png')">
+    <div class="portfolio-single" id="img_cursor" onclick="enlargeImg(document.getElementById('pop_up'), 'assets/graphics/ow_roster_enlarged.png')">
       <figure>
-        <img src="assets/graphics/lol_roster.png"alt="UCI Esports League of Legends Roster" />
+        <img src="assets/graphics/ow_roster.png"alt="Overwatch Roster" />
       </figure>
     </div>
 
@@ -231,18 +231,18 @@
   
   <div class="graphics_row">
 
-    <div class="portfolio-single" id="img_cursor" onclick="enlargeImg(document.getElementById('pop_up'), 'assets/graphics/jersey_enlarged.png')">
+    <div class="portfolio-single" id="img_cursor" onclick="enlargeImg(document.getElementById('pop_up'), 'assets/graphics/lol_roster_enlarged.png')">
       <figure>
-        <img src="assets/graphics/jersey.png" alt="UCI Esports Official Jersey" />
+        <img src="assets/graphics/lol_roster.png" alt="League of Legends Roster" />
         <figcaption>
           <h4>UCI Esports<br>Official Jersey</h4>
         </figcaption>
       </figure>
     </div>
 
-    <div class="portfolio-single" id="img_cursor" onclick="enlargeImg(document.getElementById('pop_up'), 'assets/graphics/player_banners_enlarged.png')">
+    <div class="portfolio-single" id="img_cursor" onclick="enlargeImg(document.getElementById('pop_up'), 'assets/graphics/jersey_enlarged.png')">
       <figure>
-        <img src="assets/graphics/player_banners.png" alt="League of Legends Player Banners" />
+        <img src="assets/graphics/jersey.png" alt="UCI Esports Official Jersey" />
         <figcaption>
           <h4>League of Legends<br>Player Banners</h4>
         </figcaption>
