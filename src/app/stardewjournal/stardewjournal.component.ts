@@ -1,4 +1,4 @@
-import { Component, Input, OnDestroy, OnInit } from '@angular/core';
+import { Component, Input, OnDestroy, OnInit, Renderer2 } from '@angular/core';
 import { Subscription } from 'rxjs';
 import { MenuDataService } from '../menu-data.service';
 
@@ -8,6 +8,9 @@ import { MenuDataService } from '../menu-data.service';
   styleUrls: ['./stardewjournal.component.scss']
 })
 export class StardewjournalComponent implements OnInit, OnDestroy {
+  isModalVisible: boolean = false;
+  modalTitle: string = '';
+  modalContent: Array<{ type: string, value: string }> = [];
 
   n1:Array<string>;
   n2:Array<string>;
@@ -15,7 +18,20 @@ export class StardewjournalComponent implements OnInit, OnDestroy {
   n4:Array<string>;
   subscription:Subscription;
 
-  constructor(private data: MenuDataService) { }
+  constructor(private data: MenuDataService, private renderer: Renderer2) { }
+
+  openModal(title: string, content: Array<{ type: string, value: string }>) {
+    this.isModalVisible = true;
+    this.modalTitle = title;
+    this.modalContent = content;
+    this.renderer.addClass(document.documentElement, 'no-scroll');
+  }
+
+  closeModal() {
+    this.isModalVisible = false;
+    this.renderer.removeClass(document.documentElement, 'no-scroll');
+
+  }
 
   ngOnInit(): void {
     this.data.changeName(["Surviving2020", "#F0B8BF", "surviving2020"], ["New World", "#dddddd", "new-world"], ["CATching Shrooms", "#dacfee", "catching-shrooms"], ["Puzzling Potions","#F5B971", "puzzling-potions"])
@@ -24,8 +40,7 @@ export class StardewjournalComponent implements OnInit, OnDestroy {
     this.subscription = this.data.currentN3.subscribe(n3 => this.n3 = n3)
     this.subscription = this.data.currentN4.subscribe(n4 => this.n3 = n4)
 
-    enlargeImg();
-    closeImg();
+  
   }
 
   ngOnDestroy() {
@@ -34,8 +49,3 @@ export class StardewjournalComponent implements OnInit, OnDestroy {
 
 }
 
-function enlargeImg() {
-}
-
-function closeImg() {
-}

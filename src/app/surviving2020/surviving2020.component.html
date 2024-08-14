@@ -3,15 +3,6 @@
 <body>
     <div class="page_container">
 
-        <div id="pop_up" onclick="closeImg(this)">
-            <div id="image_enlarged">
-                <img id="imgsrc"/>
-                <div id="close_btn">
-                    <img src="assets/close_btn.png"/>
-                </div>
-            </div>
-        </div>
-
         <section class="grow_title">
             <picture>
                 <source media="(min-width: 1900px)" srcset="assets/s20/surviving2020_hero_big.png" alt="surviving2020_hero hero" class="responsive">
@@ -74,12 +65,12 @@
             </li>
         </ul>
         <h4><mark>Visualizing the Story</mark></h4>
-        <div id="img_cursor" onclick="enlargeImg(document.getElementById('pop_up'), 'assets/s20/surviving_board.png')">
+        <div>
             <img src="assets/s20/surviving_board.png" width="100%">
         </div>
         <p style="font-size:11px; opacity: 60%; float: right;"><em>via Milanote</em></p>
         <h4><mark>Visualizing the Art</mark></h4>
-        <div id="img_cursor" onclick="enlargeImg(document.getElementById('pop_up'), 'assets/s20/surviving_moodboard.png')">
+        <div>
             <img src="assets/s20/surviving_moodboard.png" width="100%">
         </div>
         <p style="font-size:11px; opacity: 60%; float: right;"><em>via Milanote</em></p>
@@ -98,7 +89,7 @@
             </div>
 
             <div class="col2">
-                <div id="img_cursor" onclick="enlargeImg(document.getElementById('pop_up'), 'assets/s20/surviving_art.png')">
+                <div>
                     <img src="assets/s20/surviving_art.png" alt="brand colors" width="100%">
                 </div>
             </div>

@@ -1,16 +1,9 @@
+<!DOCTYPE html>
+<html>
 <app-navbar></app-navbar>
 
 <body>
     <div class="page_container">
-
-        <div id="pop_up" onclick="closeImg(this)">
-            <div id="image_enlarged">
-                <img id="imgsrc"/>
-                <div id="close_btn">
-                    <img src="assets/close_btn.png"/>
-                </div>
-            </div>
-        </div>
 
         <section class="grow_title">
             <picture>
@@ -72,7 +65,7 @@
 
         <br>
 
-        <div id="img_cursor" onclick="enlargeImg(document.getElementById('pop_up'), 'assets/catgame/cat_spritesheet.png')">
+        <div>
             <img src="assets/catgame/cat_spritesheet.png" alt="cat spritesheet" width="100%">
         </div>
         
@@ -111,7 +104,7 @@
     
             <h4><mark>UI Toolkit</mark></h4>
     
-            <div id="img_cursor" onclick="enlargeImg(document.getElementById('pop_up'), 'assets/catgame/ui_stylesheet.png')">
+            <div>
                 <img src="assets/catgame/ui_stylesheet.png" alt="game ui stylesheet" width="100%">
             </div>
     
@@ -128,7 +121,7 @@
         </div>
 
         <h4><mark>Designing the Map</mark></h4>
-        <div id="img_cursor" onclick="enlargeImg(document.getElementById('pop_up'), 'assets/catgame/map_level_bg.png')">
+        <div id="img_cursor" (click)="openModal('', [{type: 'image', value: 'assets/catgame/map_level_bg.png'} ])">
             <img src="assets/catgame/map_level.png" alt="map level" width="100%">
         </div>
 
@@ -136,9 +129,6 @@
 
         <div class="art">
             <div class="col1">
-                <!-- <div id="img_cursor" onclick="enlargeImg(document.getElementById('pop_up'), 'assets/catgame/map_level.png')">
-                    <img src="assets/catgame/tileset_dirt.png" alt="brand colors" width="100%">
-                </div> -->
                 <p>I focused on layering the background and foreground elements in order to add dimension to the game environment. To create a sense of boundless wonder, I wanted each tile to pieced together seamlessly without feeling repetitive. As the player journeys through the world, they’ll notice that higher aptitudes reveal a lighter environment surrounded by clouds, while descending into the lower level unveils a darker environment. Foliage, such as grass and flowers, were added to bring more detail into the landscape.</p>
                 <p>For the interactive elements, players will discover mushrooms scattered throughout with the final mushroom hidden in a chest. Flying birds act as obstacles that the player must dodge and navigate to progress.</p>
        
@@ -175,14 +165,14 @@
 
         <div class="art">
             <div class="col">
-                <div id="img_cursor" onclick="enlargeImg(document.getElementById('pop_up'), 'assets/catgame/common_ui.png')">
+                <div id="img_cursor" (click)="openModal('', [{type: 'image', value: 'assets/catgame/common_ui.png'} ])">
                     <img src="assets/catgame/common_ui.png" alt="common ui files" width="100%">
                 </div>
 
             </div>
 
             <div class="col">
-                <div id="img_cursor" onclick="enlargeImg(document.getElementById('pop_up'), 'assets/catgame/settings_widget_blueprint.png')">
+                <div id="img_cursor" (click)="openModal('', [{type: 'image', value: 'assets/catgame/settings_widget_blueprint.png'} ])">
                     <img src="assets/catgame/settings_widget_blueprint.png" alt="settings widget blueprint" width="100%">
                 </div>
             </div>
@@ -191,14 +181,14 @@
         <br>
         <div class="art">
             <div class="col">
-                <div id="img_cursor" onclick="enlargeImg(document.getElementById('pop_up'), 'assets/catgame/player_blueprint1.png')">
+                <div id="img_cursor" (click)="openModal('', [{type: 'image', value: 'assets/catgame/player_blueprint1.png'} ])">
                     <img src="assets/catgame/player_blueprint1.png" alt="pawn widget blueprint" width="100%">
                 </div>
 
             </div>
 
             <div class="col">
-                <div id="img_cursor" onclick="enlargeImg(document.getElementById('pop_up'), 'assets/catgame/player_blueprint2.png')">
+                <div id="img_cursor" (click)="openModal('', [{type: 'image', value: 'assets/catgame/player_blueprint2.png'} ])">
                     <img src="assets/catgame/player_blueprint2.png" alt="pawn widget blueprint" width="100%">
                 </div>
             </div>
@@ -216,14 +206,14 @@
 
         <div class="art">
             <div class="col">
-                <div id="img_cursor" onclick="enlargeImg(document.getElementById('pop_up'), 'assets/catgame/shot0.png')">
+                <div id="img_cursor" (click)="openModal('', [{type: 'image', value: 'assets/catgame/shot0.png'} ])">
                     <img src="assets/catgame/shot0.png" alt="game screenshot" width="100%">
                 </div>
 
             </div>
 
             <div class="col">
-                <div id="img_cursor" onclick="enlargeImg(document.getElementById('pop_up'), 'assets/catgame/shot1.png')">
+                <div id="img_cursor" (click)="openModal('', [{type: 'image', value: 'assets/catgame/shot1.png'} ])">
                     <img src="assets/catgame/shot1.png" alt="game screenshot" width="100%">
                 </div>
             </div>
@@ -232,14 +222,14 @@
         <br>
         <div class="art">
             <div class="col">
-                <div id="img_cursor" onclick="enlargeImg(document.getElementById('pop_up'), 'assets/catgame/shot2.png')">
+                <div id="img_cursor" (click)="openModal('', [{type: 'image', value: 'assets/catgame/shot2.png'} ])">
                     <img src="assets/catgame/shot2.png" alt="game screenshot" width="100%">
                 </div>
 
             </div>
 
             <div class="col">
-                <div id="img_cursor" onclick="enlargeImg(document.getElementById('pop_up'), 'assets/catgame/shot3.png')">
+                <div id="img_cursor" (click)="openModal('', [{type: 'image', value: 'assets/catgame/shot3.png'} ])">
                     <img src="assets/catgame/shot3.png" alt="game screenshot" width="100%">
                 </div>
             </div>
@@ -248,14 +238,14 @@
         <br>
         <div class="art">
             <div class="col">
-                <div id="img_cursor" onclick="enlargeImg(document.getElementById('pop_up'), 'assets/catgame/shot4.png')">
+                <div id="img_cursor" (click)="openModal('', [{type: 'image', value: 'assets/catgame/shot4.png'} ])">
                     <img src="assets/catgame/shot4.png" alt="game screenshot" width="100%">
                 </div>
 
             </div>
 
             <div class="col">
-                <div id="img_cursor" onclick="enlargeImg(document.getElementById('pop_up'), 'assets/catgame/shot5.png')">
+                <div id="img_cursor" (click)="openModal('', [{type: 'image', value: 'assets/catgame/shot5.png'} ])">
                     <img src="assets/catgame/shot5.png" alt="game screenshot" width="100%">
                 </div>
             </div>
@@ -275,10 +265,11 @@
         </p>
     </section>
 
-
+<app-projectpopup [isVisible]="isModalVisible" [title]="modalTitle" [content]="modalContent" (closeModal)="closeModal()"></app-projectpopup>
 <app-viewmoremenu></app-viewmoremenu>
 <app-footer></app-footer>
 
 
     </div>
 </body>
+</html>

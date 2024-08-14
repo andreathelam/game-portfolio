@@ -24,6 +24,7 @@ import { PollinateComponent } from './pollinate/pollinate.component';
 import { WebDesignComponent } from './web-design/web-design.component';
 import { NewworldComponent } from './newworld/newworld.component';
 import { CatgameComponent } from './catgame/catgame.component';
+import { ProjectpopupComponent } from './projectpopup/projectpopup.component';
 
 @NgModule({
   declarations: [
@@ -44,6 +45,7 @@ import { CatgameComponent } from './catgame/catgame.component';
     WebDesignComponent,
     NewworldComponent,
     CatgameComponent,
+    ProjectpopupComponent,
   ],
   imports: [
     BrowserModule,

@@ -1,22 +1,8 @@
 <!DOCTYPE html>
 <html>
-<app-navbar></app-navbar>
-
-<head>
-</head>
-<body> 
-
+<app-navbar></app-navbar> 
+<body>
 <div class="page_container">
-
-    <div id="pop_up" onclick="closeImg(this)">
-        <div id="image_enlarged">
-            <img id="imgsrc" class="responsive"/>
-            <div id="close_btn">
-                <img src="assets/close_btn.png"/>
-            </div>
-        </div>
-    </div>
-
 
     <section class="grow_title">
         <picture>
@@ -48,12 +34,12 @@
 
     <div class="sketches">
         <div class="sketch">
-            <div id="img_cursor" onclick="enlargeImg(document.getElementById('pop_up'), 'assets/potions/potions_screen_2.png')">   
+            <div id="img_cursor" (click)="openModal('', [{type: 'image', value: 'assets/potions/potions_screen_2.png'} ])">  
                 <img src="assets/potions/potions_screen_2.png" alt="screen 1" class="responsive"/>
             </div>
         </div>
         <div class="sketch">
-            <div id="img_cursor" onclick="enlargeImg(document.getElementById('pop_up'), 'assets/potions/potions_screen_1.png')">   
+            <div id="img_cursor" (click)="openModal('', [{type: 'image', value: 'assets/potions/potions_screen_1.png'} ])">  
                 <img src="assets/potions/potions_screen_1.png" alt="screen 1" class="responsive"/>
             </div>
         </div>
@@ -76,12 +62,12 @@
         </ul>
         <div class="sketches">
             <div class="sketch">
-                <div id="img_cursor" onclick="enlargeImg(document.getElementById('pop_up'), 'assets/potions/potions_sketches_1.png')">
+                <div id="img_cursor" (click)="openModal('', [{type: 'image', value: 'assets/potions/potions_sketches_1.png'} ])">
                     <img src="assets/potions/potions_sketches_1.png" alt="sketch 1" class="responsive">
                 </div>
             </div>
             <div class="sketch">
-                <div id="img_cursor" onclick="enlargeImg(document.getElementById('pop_up'), 'assets/potions/potions_sketches_2.png')">   
+                <div id="img_cursor" (click)="openModal('', [{type: 'image', value: 'assets/potions/potions_sketches_2.png'} ])"> 
                     <img src="assets/potions/potions_sketches_2.png" alt="sketch 2" class="responsive">
                 </div>
             </div>
@@ -109,8 +95,8 @@
             </h3>
         </div>
         <br>
-        <div id="img_cursor" onclick="enlargeImg(document.getElementById('pop_up'), 'assets/potions/potions_screen_flow_1.png')">   
-            <img src="assets/potions/potions_screen_flow_1.png" alt="screen flow" class="responsive" id="potions_flow" ng-click="enlargeImg(this)">
+        <div id="img_cursor" (click)="openModal('', [{type: 'image', value: 'assets/potions/potions_screen_flow_1.png'} ])">
+            <img src="assets/potions/potions_screen_flow_1.png" alt="screen flow" class="responsive" id="potions_flow">
         </div>
         <br>
         <br>
@@ -122,8 +108,8 @@
             </h3>
         </div>
         <br>
-        <div id="img_cursor" onclick="enlargeImg(document.getElementById('pop_up'), 'assets/potions/potions_screen_flow_2.png')">   
-            <img src="assets/potions/potions_screen_flow_2.png" alt="screen flow" class="responsive" id="potions_flow" ng-click="enlargeImg(this)">
+        <div id="img_cursor" (click)="openModal('', [{type: 'image', value: 'assets/potions/potions_screen_flow_2.png'} ])">
+            <img src="assets/potions/potions_screen_flow_2.png" alt="screen flow" class="responsive" id="potions_flow">
         </div>
         <br>
         <br>
@@ -135,8 +121,8 @@
             </h3>
         </div>
         <br>
-        <div id="img_cursor" onclick="enlargeImg(document.getElementById('pop_up'), 'assets/potions/potions_screen_flow_3.png')">   
-            <img src="assets/potions/potions_screen_flow_3.png" alt="screen flow" class="responsive" id="potions_flow" ng-click="enlargeImg(this)">
+        <div id="img_cursor" (click)="openModal('', [{type: 'image', value: 'assets/potions/potions_screen_flow_3.png'} ])">  
+            <img src="assets/potions/potions_screen_flow_3.png" alt="screen flow" class="responsive" id="potions_flow">
         </div>
        
 
@@ -171,36 +157,9 @@
             </div>
         </div>
         
-        <!-- <div class="proto_features">
-            <div class="col_container">
-                <div class="col-1">
-                    <h3>Prototype A</h3>
-                    <ul>
-                        <li>Multiple Progression</li>
-                        <li>Single-space Removal</li>
-                        <li>Individually-layered Spaces</li>
-                        <li>Group-layered Spaces</li>
-                    </ul>
-                </div>
-                
-                <hr>
+        
+        <br>
 
-                <div class="col-2">
-                    <h3>Prototype B</h3>
-                    <ul>
-                        <li>Linear Progression</li>
-                        <li>Tetris-shaped Removal</li>
-                    </ul>
-                </div>              
-            </div>
-            <p>Both prototypes included decoy ingredients and a NUX to guide the player.</p>
-        </div> -->
-        <br>
-        <br>
-        <!-- <video autoplay controls class="responsive">
-            <source src="assets/potions/potions_prototype.MOV" type="video/mp4">
-            Your browser does not support the video tag.
-        </video> -->
         <div class="vid_container">
             <iframe src="https://player.vimeo.com/video/650532232?h=873d051215&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479?autoplay=1&loop=1&autopause=0" allowfullscreen allow="autoplay" referrerpolicy="no-referrer" ></iframe>
         </div>
@@ -271,12 +230,12 @@
         <p><em>Multiple Progression, Single-space Removal, Individually-layered Spaces</em></p>
         <div class="sketches">
             <div class="sketch">
-                <div id="img_cursor" onclick="enlargeImg(document.getElementById('pop_up'), 'assets/potions/potions_screen_2.png')">   
+                <div id="img_cursor" (click)="openModal('', [{type: 'image', value: 'assets/potions/potions_screen_2.png'} ])"> 
                     <img src="assets/potions/potions_screen_2.png" alt="screen 1" class="responsive"/>
                 </div>
             </div>
             <div class="sketch">
-                <div id="img_cursor" onclick="enlargeImg(document.getElementById('pop_up'), 'assets/potions/potions_screen_1.png')">   
+                <div id="img_cursor" (click)="openModal('', [{type: 'image', value: 'assets/potions/potions_screen_1.png'} ])">  
                     <img src="assets/potions/potions_screen_1.png" alt="screen 1" class="responsive"/>
                 </div>
             </div>
@@ -298,12 +257,12 @@
         
 
         <div class="sketch">
-            <div id="img_cursor" onclick="enlargeImg(document.getElementById('pop_up'), 'assets/potions/potions_symbols.png')">   
+            <div id="img_cursor" (click)="openModal('', [{type: 'image', value: 'assets/potions/potions_symbols.png'} ])"> 
                 <img src="assets/potions/potions_symbols.png" alt="sketch 1" class="responsive">
             </div>
         </div>
         <div class="sketch">
-            <div id="img_cursor" onclick="enlargeImg(document.getElementById('pop_up'), 'assets/potions/potions_tiles.png')">   
+            <div id="img_cursor" (click)="openModal('', [{type: 'image', value: 'assets/potions/potions_tiles.png'} ])"> 
                 <img src="assets/potions/potions_tiles.png" alt="sketch 2" class="responsive">
             </div>
         </div>
@@ -336,12 +295,12 @@
         <p>Working with Jam City this past summer has been such an unique, exciting experience. This was the first game feature I’ve ever worked on, and learning the whole process from concept to execution in games has made me realize how important collaboration between UI/UX, Game Design, Art, and Engineering is. I want to thank Sally, Lamar, and Jackson for guiding me and pushing me to grow as a designer, and I can’t wait for players to enjoy such a fun, special event. </p>
     </section>
 
-<app-viewmoremenu></app-viewmoremenu>
 
+<app-projectpopup [isVisible]="isModalVisible" [title]="modalTitle" [content]="modalContent" (closeModal)="closeModal()"></app-projectpopup>
+<app-viewmoremenu></app-viewmoremenu>
 <app-footer></app-footer>
 
 </div>
-
 </body>
 </html>
 

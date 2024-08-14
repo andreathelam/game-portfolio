@@ -6,6 +6,28 @@ body, html {
   
 }
 
+.no-scroll { overflow: hidden; }
+#button:hover { 
+    filter: brightness(110%); 
+    opacity: 100%;
+}
+
+.close_btn_container {
+    width: 100%;
+    height: 5vh;
+    margin-right: 5%;
+    text-align: right;
+    object-fit: contain;
+    position: sticky;
+    top: 5%;
+
+    .close_btn {
+      width: auto;
+      height: 100%;
+      cursor: pointer;
+      opacity: 60%;
+    }
+}
 
   
 
@@ -86,9 +108,6 @@ body, html {
         padding-bottom: 20px;
     }
 
-    #pop_up {
-        display: none !important;
-    }
     
 }
 
@@ -147,60 +166,6 @@ body, html {
         padding-bottom: 30px;
     }
 
-    /* Image popup */
-
-    #pop_up {
-        display: none;
-        position: fixed;
-        z-index: 20; 
-        left: 0;
-        top: 0;
-        width: 100%;
-        height: 100%;
-        background-color: rgba(0, 0, 0, 0.803);
-        justify-content: center;
-        flex-direction: row;
-
-        #image_enlarged {
-        text-align: center;
-        margin: auto;
-        width: 90%;
-        height: 90%;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: flex-start;
-        -webkit-animation: fadeIn .5s;
-        animation: fadeIn .5s;
-
-        #close_btn {
-            //margin-top: 1em;
-            //margin-right: auto;
-            //margin-left: auto;
-            margin-left: 1em;
-            cursor: pointer;
-            width: 2em;
-            height: auto;
-
-
-            img{
-                width: 100%;
-                height: auto;
-                
-            }
-    }
-
-    #imgsrc {
-        max-width: 100%;
-        max-height: 100%;
-        height:auto;
-        overflow: hidden;
-        object-fit: cover;
-    
-    }
-    }
-
-    }
   
 
 }
@@ -399,56 +364,6 @@ body, html {
         width: 80%;
     }
 
-     /* Image popup */
-    #pop_up {
-        display: none;
-        position: fixed;
-        z-index: 20; 
-        left: 0;
-        top: 0;
-        width: 100%;
-        height: 100%;
-        background-color: rgba(0, 0, 0, 0.619);
-        justify-content: center;
-        flex-direction: row;
-
-        #image_enlarged {
-        text-align: center;
-        margin: auto;
-        width: 80%;
-        // height: auto;
-        display: flex;
-        align-items: flex-start;
-        flex-direction: row;
-        justify-content: center;
-        gap: 1em;
-        -webkit-animation: fadeIn .5s;
-        animation: fadeIn .5s;
-
-        #close_btn {
-            margin: 0;
-            cursor: pointer;
-            width: 3%;
-            height: auto;
-            object-fit: contain;
-
-            img{
-                max-width: 100%;
-                max-height: auto;
-            }
-        }
-
-        #imgsrc {
-            // width: 90%;
-            height:auto;
-            overflow: hidden;
-            object-fit: contain;
-        
-        }
-        }
-
-    }
-  
 
     #project_container {
         margin-left: 20%;

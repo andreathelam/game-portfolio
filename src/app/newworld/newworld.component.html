@@ -2,18 +2,9 @@
 <html>
 <app-navbar></app-navbar>
 
-<body ng-app="clickImg"> 
+<body> 
 
 <div class="page_container">
-
-    <div id="pop_up" onclick="closeImg(this)">
-        <div id="image_enlarged">
-            <img id="imgsrc" class="responsive"/>
-            <div id="close_btn">
-                <img src="assets/close_btn.png"/>
-            </div>
-        </div>
-    </div>
 
 
     <section class="grow_title">
@@ -58,17 +49,17 @@
     
             <div class="row_img">
                 <div class="img_con">
-                    <div id="img_cursor" onclick="enlargeImg(document.getElementById('pop_up'), 'assets/newworld/landing_layout_1_hires.png')">
+                    <div id="img_cursor" (click)="openModal('', [{type: 'image', value: 'assets/newworld/landing_layout_1_hires.png'} ])">
                         <img src="assets/newworld/landing_layout_1.png" alt="landing page layout 1" class="responsive">
                     </div>
                 </div>
                 <div class="img_con">
-                    <div id="img_cursor" onclick="enlargeImg(document.getElementById('pop_up'), 'assets/newworld/landing_layout_3_hires.png')">
+                    <div id="img_cursor" (click)="openModal('', [{type: 'image', value: 'assets/newworld/landing_layout_3_hires.png'} ])">
                         <img src="assets/newworld/landing_layout_3.png" alt="landing page layout 2" class="responsive">
                     </div>
                 </div>
                 <div class="img_con">
-                    <div id="img_cursor" onclick="enlargeImg(document.getElementById('pop_up'), 'assets/newworld/landing_layout_2_hires.png')">
+                    <div id="img_cursor" (click)="openModal('', [{type: 'image', value: 'assets/newworld/landing_layout_2_hires.png'} ])">
                         <img src="assets/newworld/landing_layout_2.png" alt="landing page layout 3" class="responsive">
                     </div>
                 </div>
@@ -77,7 +68,7 @@
             <p>Utimately, we decided on a three column (1:2:1) approach as it presented the two main categories clearly and the ratio provided balance across the screen. I included bold, large imagery and icons of the subcategories with a common frame backing to tie it all together.</p>        
 
         
-        <div id="img_cursor" onclick="enlargeImg(document.getElementById('pop_up'), 'assets/newworld/category_select_hover.png')">
+        <div id="img_cursor" (click)="openModal('', [{type: 'image', value: 'assets/newworld/category_select_hover.png'} ])">
             <img src="assets/newworld/category_select_hover.png" alt="leaderboard category select screen" class="responsive">
         </div>
 
@@ -91,7 +82,7 @@
         <h4><mark>Board</mark></h4>
         <p>This screen features all the subcategories in a the left nav menu, the leaderboard in the middle with the player’s score displayed at the bottom, and the rewards showcased on the right. Playing around with visual treatments, I used fog, particles, and thin borders/frames.
         </p>
-        <div id="img_cursor" onclick="enlargeImg(document.getElementById('pop_up'), 'assets/newworld/spreadsheet.png')">
+        <div id="img_cursor" (click)="openModal('', [{type: 'image', value: 'assets/newworld/spreadsheet.png'} ])">
             <img src="assets/newworld/spreadsheet.png" alt="leaderboard board screen" class="responsive" >
         </div>
 
@@ -232,16 +223,16 @@
         </div>
 
         <p>The team began an intiative to elevate the user interface, giving it a more magical feel and improving player interaction with menus and popups. Here are a few visual redesigns of existing in-game screens that I worked on.</p>
-        <div id="img_cursor" onclick="enlargeImg(document.getElementById('pop_up'), 'assets/newworld/nw_mock_expedition.png')">
+        <div id="img_cursor" (click)="openModal('', [{type: 'image', value: 'assets/newworld/nw_mock_expedition.png'} ])">
             <img src="assets/newworld/nw_mock_expedition.png" alt="expedition redesign" class="responsive">
         </div>
-        <div id="img_cursor" onclick="enlargeImg(document.getElementById('pop_up'), 'assets/newworld/nw_mock_box_opening.png')">
+        <div id="img_cursor" (click)="openModal('', [{type: 'image', value: 'assets/newworld/nw_mock_box_opening.png'} ])">
             <img src="assets/newworld/nw_mock_box_opening.png" alt="box opening redesign" class="responsive">
         </div>
-        <div id="img_cursor" onclick="enlargeImg(document.getElementById('pop_up'), 'assets/newworld/nw_mock_roster.png')">
+        <div id="img_cursor" (click)="openModal('', [{type: 'image', value: 'assets/newworld/nw_mock_roster.png'} ])">
             <img src="assets/newworld/nw_mock_roster.png" alt="war roster redesign" class="responsive">
         </div>
-        <div id="img_cursor" onclick="enlargeImg(document.getElementById('pop_up'), 'assets/newworld/nw_mock_scoreboard.png')">
+        <div id="img_cursor" (click)="openModal('', [{type: 'image', value: 'assets/newworld/nw_mock_scoreboard.png'} ])">
             <img src="assets/newworld/nw_mock_scoreboard.png" alt="scoreboard redesign" class="responsive">
         </div>
 
@@ -256,13 +247,13 @@
         </div>
 
         <p>My other work included creating icons and visual elements for the screens.</p>
-        <div id="img_cursor" onclick="enlargeImg(document.getElementById('pop_up'), 'assets/newworld/nw_icons_map.png')">
+        <div id="img_cursor" (click)="openModal('', [{type: 'image', value: 'assets/newworld/nw_icons_map.png'} ])">
             <img src="assets/newworld/nw_icons_map.png" alt="box opening redesign" class="responsive">
         </div>
-        <div id="img_cursor" onclick="enlargeImg(document.getElementById('pop_up'), 'assets/newworld/nw_icons_item.png')">
+        <div id="img_cursor" (click)="openModal('', [{type: 'image', value: 'assets/newworld/nw_icons_item.png'} ])">
             <img src="assets/newworld/nw_icons_item.png" alt="war roster redesign" class="responsive">
         </div>
-        <div id="img_cursor" onclick="enlargeImg(document.getElementById('pop_up'), 'assets/newworld/nw_drawings.png')">
+        <div id="img_cursor" (click)="openModal('', [{type: 'image', value: 'assets/newworld/nw_drawings.png'} ])">
             <img src="assets/newworld/nw_drawings.png" alt="scoreboard redesign" class="responsive">
         </div>
 
@@ -277,14 +268,10 @@
 
 
 <app-viewmoremenu></app-viewmoremenu>
-
+<app-projectpopup [isVisible]="isModalVisible" [title]="modalTitle" [content]="modalContent" (closeModal)="closeModal()"></app-projectpopup>
 <app-footer></app-footer>
 
 </div>
-
-<script>
-    src="assets/js/enlargeImg.js"
-</script>
 
 </body>
 </html>

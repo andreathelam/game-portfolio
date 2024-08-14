@@ -1,18 +1,10 @@
+<!DOCTYPE html>
+<html>
 <app-navbar></app-navbar>
 
 <body> 
 
 <div class="page_container">
-
-    <div id="pop_up" onclick="closeImg(this)">
-        <div id="image_enlarged">
-            <img id="imgsrc"/>
-            <div id="close_btn">
-                <img src="assets/close_btn.png"/>
-            </div>
-        </div>
-    </div>
-
 
     <section class="grow_title">
         <picture>
@@ -58,17 +50,17 @@
         <p>Asking for the processes players used when planning their tasks and managing their farms, I categorized the responses into 3 general groups based on what aspect of the game is focused on and the players’ needs. These are the crafted personas.</p>        
         <div class="sdv_personas">
             <div class="box">
-                <div id="img_cursor" onclick="enlargeImg(document.getElementById('pop_up'), 'assets/sdv/persona_scheduler.png')">
+                <div id="img_cursor" (click)="openModal('', [{type: 'image', value: 'assets/sdv/persona_scheduler.png'} ])">  
                     <img src="assets/sdv/persona_scheduler.png" alt="scheduler persona" class="responsive">
                 </div>
             </div>
             <div class="box">
-                <div id="img_cursor" onclick="enlargeImg(document.getElementById('pop_up'), 'assets/sdv/persona_friend.png')">
+                <div id="img_cursor" (click)="openModal('', [{type: 'image', value: 'assets/sdv/persona_friend.png'} ])">  
                     <img src="assets/sdv/persona_friend.png" alt="friend persona" class="responsive">
                 </div>
             </div>
             <div class="box">
-                <div id="img_cursor" onclick="enlargeImg(document.getElementById('pop_up'), 'assets/sdv/persona_forgetful.png')">
+                <div id="img_cursor" (click)="openModal('', [{type: 'image', value: 'assets/sdv/persona_forgetful.png'} ])">  
                     <img src="assets/sdv/persona_forgetful.png" alt="forgetful persona" class="responsive">
                 </div>
             </div>
@@ -181,7 +173,7 @@
             </div>
     
             <div class="col_img">
-                <div id="img_cursor" onclick="enlargeImg(document.getElementById('pop_up'), 'assets/sdv/sdv_widget.png')">
+                <div id="img_cursor" (click)="openModal('', [{type: 'image', value: 'assets/sdv/sdv_widget.png'} ])">  
                     <img src="assets/sdv/sdv_widget.png" alt="home screen" class="responsive">
                 </div>
             </div>
@@ -194,7 +186,7 @@
             </div>
     
             <div class="col_img">
-                <div id="img_cursor" onclick="enlargeImg(document.getElementById('pop_up'), 'assets/sdv/sdv_cal.png')">
+                <div id="img_cursor" (click)="openModal('', [{type: 'image', value: 'assets/sdv/sdv_cal.png'} ])">  
                     <img src="assets/sdv/sdv_cal.png" alt="calendar view" class="responsive">
                 </div>
             </div>
@@ -207,7 +199,7 @@
             </div>
     
             <div class="col_img">
-                <div id="img_cursor" onclick="enlargeImg(document.getElementById('pop_up'), 'assets/sdv/sdv_lists.png')">
+                <div id="img_cursor" (click)="openModal('', [{type: 'image', value: 'assets/sdv/sdv_lists.png'} ])">  
                     <img src="assets/sdv/sdv_lists.png" alt="home screen" class="responsive">
                 </div>
             </div>
@@ -220,7 +212,7 @@
             </div>
     
             <div class="col_img">
-                <div id="img_cursor" onclick="enlargeImg(document.getElementById('pop_up'), 'assets/sdv/sdv_templates.png')">
+                <div id="img_cursor" (click)="openModal('', [{type: 'image', value: 'assets/sdv/sdv_templates.png'} ])">  
                     <img src="assets/sdv/sdv_templates.png" alt="home screen" class="responsive">
                 </div>
             </div>
@@ -234,7 +226,7 @@
             </div>
     
             <div class="col_img">
-                <div id="img_cursor" onclick="enlargeImg(document.getElementById('pop_up'), 'assets/sdv/sdv_reminders.png')">
+                <div id="img_cursor" (click)="openModal('', [{type: 'image', value: 'assets/sdv/sdv_reminders.png'} ])">  
                     <img src="assets/sdv/sdv_reminders.png" alt="home screen" class="responsive">
                 </div>
             </div>
@@ -251,12 +243,13 @@
         </p>
     </section>
 
+<app-projectpopup [isVisible]="isModalVisible" [title]="modalTitle" [content]="modalContent" (closeModal)="closeModal()"></app-projectpopup>
 <app-viewmoremenu></app-viewmoremenu>
-
 <app-footer></app-footer>
 
 </div>
 
 </body>
+</html>
 
 
