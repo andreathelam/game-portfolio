@@ -7,8 +7,12 @@ body, html {
 }
 
 .no-scroll { overflow: hidden; }
+
+#button {
+    opacity: 80%;
+}
 #button:hover { 
-    filter: brightness(110%); 
+    //filter: brightness(110%); 
     opacity: 100%;
 }
 
@@ -25,7 +29,6 @@ body, html {
       width: auto;
       height: 100%;
       cursor: pointer;
-      opacity: 60%;
     }
 }
 
