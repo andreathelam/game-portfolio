@@ -16,6 +16,8 @@
     z-index: 1000;
     -webkit-animation: fadeIn .5s;
     animation: fadeIn .5s;
+    -webkit-overflow-scrolling: touch; /* Enable smooth scrolling */
+
   }
 
   
