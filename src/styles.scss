@@ -9,11 +9,11 @@ body, html {
 .no-scroll { overflow: hidden; }
 
 #button {
-    opacity: 80%;
+    opacity: 0.8;
 }
 #button:hover { 
     //filter: brightness(110%); 
-    opacity: 100%;
+    opacity: 1.0;
 }
 
 .close_btn_container {
