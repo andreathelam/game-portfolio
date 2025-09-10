@@ -18,7 +18,7 @@
                     <p></p>
                 </div>
                 <div *ngIf="item.type === 'video'" class="responsive">
-                    <video autoplay loop>
+                    <video autoplay loop playsinline>
                         <source [src]="item.value" type="video/mp4">
                         Your browser does not support the video.
                     </video>

@@ -35,7 +35,7 @@ export class PollinateComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.data.changeName(["Stardew Journal", "#CFB5D0", "stardew-journal"], ["Surviving2020", "#F0B8BF", "surviving2020"], ["New World", "#dddddd", "new-world"], ["CATching Shrooms", "#dacfee", "catching-shrooms"])
+    this.data.changeName(["Stardew Journal", "#CFB5D0", "stardew-journal"], ["Wartorn", "#f3d3d7", "wartorn"], ["New World", "#dddddd", "new-world"], ["CATching Shrooms", "#dacfee", "catching-shrooms"])
     this.subscription = this.data.currentN1.subscribe(n1 => this.n1 = n1)
     this.subscription = this.data.currentN2.subscribe(n2 => this.n2 = n2)
     this.subscription = this.data.currentN3.subscribe(n3 => this.n3 = n3)

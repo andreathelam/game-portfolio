@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+<app-navbar></app-navbar>
+
+<body> 
+
+<div class="page_container">
+
+
+    <section class="grow_title">
+        <picture>
+            <source media="(min-width: 1900px)" srcset="assets/wartorn/wartorn_hero_big.png" alt="wartorn hero" class="responsive">
+            <source media="(min-width: 992px)" srcset="assets/wartorn/wartorn_hero.png" alt="wartorn hero" class="responsive">
+            <source media="(min-width: 600px)" srcset="assets/wartorn/wartorn_hero_med.png" alt="wartorn hero" class="responsive">
+            <source media="(max-width: 599px)" srcset="assets/wartorn/wartorn_hero_sm.png" alt="wartorn hero" class="responsive">
+            <img src="assets/newworld/newworld_hero.png" alt="newworld hero" class="responsive">
+        </picture>
+    </section>
+
+    <!-- PROJECT OVERVIEW -->
+    <section class="section" href="project_overview" id="project_overview">
+        <div class="col1">
+            <h5><mark><strong>OVERVIEW</strong></mark></h5>
+            <p>As the sole UI/UX Designer on <em>Wartorn</em>, I was responsible for building the game’s interface from the ground up. This included designing an intuitive menu system and establishing the visual direction for all UI elements. My work shaped the player experience from early wireframes through to the final game, which has successfully shipped on Steam.</p>
+        </div>
+        <div class="col2">
+            <h5><mark><strong>ROLE & DURATION</strong></mark></h5>
+            <p><strong>UI/UX Designer</strong></p>
+            <p><em>Flows, Wireframes, Visual Design, Iconography</em></p>
+            <hr>
+            <p><em>Oct 2024 - Aug 2025</em></p>
+        </div>
+    </section>
+
+    <br/>
+
+    <!-- FINAL MOCKUPS -->
+    <section class="section" href="user" id="user">
+
+        <h4><mark>Final Mockups</mark></h4>
+        
+        <div id="img_cursor" (click)="openModal('', [{type: 'image', value: 'assets/wartorn/wartorn_mocks.png'} ])">
+            <img src="assets/wartorn/wartorn_mocks.png" alt="mocks" class="responsive">
+        </div>
+
+
+    </section>
+
+    <!-- SETTING THE FOUNDATION -->
+    <section class="section" href="user" id="user">
+        <div class="banner">
+            <h1 style="color: #451107;">Setting the Foundation</h1>
+            <hr>    
+        </div>
+
+        <br/>
+
+        <h4><mark>UX Flows</mark></h4>
+
+        <p>To better understand interactions within the game’s UI, I created two types of flows: </p>
+        <ul>
+            <li><strong>Screen flow</strong> to map how all menus connect and define possible navigation paths.</li>
+            <li><strong>Action flow</strong> to break down the specific actions players can take on each screen.</li>
+        </ul>
+        
+        <div class="row_img">
+            <div class="img_con">
+                <div id="img_cursor" (click)="openModal('', [{type: 'image', value: 'assets/wartorn/screen_flow.png'} ])">
+                    <img src="assets/wartorn/screen_flow.png" alt="screen flow" class="responsive">
+                </div>
+            </div>
+            <div class="img_con">
+                <div id="img_cursor" (click)="openModal('', [{type: 'image', value: 'assets/wartorn/action_flow.png'} ])">
+                    <img src="assets/wartorn/action_flow.png" alt="action flow" class="responsive">
+                </div>
+            </div>
+        </div>
+
+        <br/>
+
+        <h4><mark>Wireframes</mark></h4>
+        <p>Using Figma, I built wireframes to establish layout and content hierarchy. Since Wartorn was planned as a cross-platform title, I also accounted for gamepad controls. My focus was on creating clean, intuitive menus that prioritized essential information, while offering tooltips or pop-ups for players who wanted more detail.
+        </p>
+        <p>
+            With these wireframes, I collaborated closely with the creative director and engineers to ensure the designs balanced player experience with technical feasibility.
+        </p>
+        
+        <div id="img_cursor" (click)="openModal('', [{type: 'image', value: 'assets/wartorn/wartorn_wireframes.png'} ])">
+            <img src="assets/wartorn/wartorn_wireframes.png" alt="wartorn wireframes" class="responsive">
+        </div>
+
+
+       
+
+    </section>
+
+    <!-- VISUAL DESIGN GUIDE -->
+    <section class="section" href="user" id="user">
+        <div class="banner">
+            <h1 style="color: #451107;">UI Design Guide</h1>
+            <hr>    
+        </div>
+
+        <p>The UI style guide I put together defined the typography, colors, textures, and elements such as frames, buttons, and tooltips.
+        </p>
+        <div id="img_cursor" (click)="openModal('', [{type: 'image', value: 'assets/wartorn/wartorn_style_guide.png'} ])">
+            <img src="assets/wartorn/wartorn_style_guide.png" alt="expedition redesign" class="responsive">
+        </div>
+
+        <br/>
+
+    </section>
+
+    <!-- KEY SCREENS -->
+    <section class="section" href="user" id="user">
+        <div class="banner">
+            <h1 style="color: #451107;">Key Screens</h1>
+            <hr>    
+        </div>
+
+        <br/>
+
+        <h4><mark>Squad Inspector</mark></h4>
+        <div id="img_cursor" (click)="openModal('', [{type: 'image', value: 'assets/wartorn/Mock_Squad_Inspector.png'} ])">
+            <img src="assets/wartorn/Mock_Squad_Inspector.png" alt="squad inspector" class="responsive">
+        </div>
+
+        <br/>
+
+        <h4><mark>Spellbook</mark></h4>
+        <div id="img_cursor" (click)="openModal('', [{type: 'image', value: 'assets/wartorn/Mock_Spell_Selection.png'} ])">
+            <img src="assets/wartorn/Mock_Spell_Selection.png" alt="spellbook screen" class="responsive">
+        </div>
+
+        <br/>
+
+        <h4><mark>Overworld HUD</mark></h4>
+        <div id="img_cursor" (click)="openModal('', [{type: 'image', value: 'assets/wartorn/Mock_Overworld_HUD.png'} ])">
+            <img src="assets/wartorn/Mock_Overworld_HUD.png" alt="overworld map hud" class="responsive">
+        </div>
+
+        <br/>
+
+        <h4><mark>Battle HUD</mark></h4>
+        <div id="img_cursor" (click)="openModal('', [{type: 'image', value: 'assets/wartorn/Mock_Battle_HUD.png'} ])">
+            <img src="assets/wartorn/Mock_Battle_HUD.png" alt="battle hud" class="responsive">
+        </div>
+
+
+         <br/>
+
+        <h4><mark>Squad Card</mark></h4>
+        <div id="img_cursor" (click)="openModal('', [{type: 'image', value: 'assets/wartorn/Squad_Card.png'} ])">
+            <img src="assets/wartorn/Squad_Card.png" alt="battle hud" class="responsive">
+        </div>
+
+
+    </section>
+
+     <!-- ICONS -->
+    <section class="section" href="user" id="user">
+        <div class="banner">
+            <h1 style="color: #451107;">Icons</h1>
+            <hr>    
+        </div>
+
+        <p>This is a collection of all the icons I worked on, ranging from flat ability icons to 2d item icons. During my time on Wartorn, I created over 200 icons.</p>
+        <div id="img_cursor" (click)="openModal('', [{type: 'image', value: 'assets/wartorn/wartorn_icons.png'} ])">
+            <img src="assets/wartorn/wartorn_icons.png" alt="wartorn icons" class="responsive">
+        </div>
+
+        <br/>
+
+    </section>
+
+    <!-- UE5 SUPPORT -->
+    <section class="section" href="user" id="user">
+        <div class="banner">
+            <h1 style="color: #451107;">UE5 Support</h1>
+            <hr>    
+        </div>
+
+        <h4><mark>Animations</mark></h4>
+        <p>Using the UE5 Animation Editor, I created victory/defeat animations and reward celebrations.</p>
+        <div>
+            <video id="myVideo" alt="battle sequence animation" width="100%" autoplay loop playsinline>
+                <source src="assets/wartorn/battle_seq.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div>
+            <video alt="new item sequence animation" width="100%" autoplay loop playsinline>
+                <source src="assets/wartorn/new_item_seq_animation.mp4" type="video/mp4">
+            </video>
+        </div>
+
+        <br/>
+
+        <h4><mark>Widgets</mark></h4>
+        <p>Working with the engineers, I implemented UI screens using reusable widgets in the UE5 designer. I also constructed simple logic in blueprints to populate data and trigger animations.</p>
+
+       <div id="img_cursor" (click)="openModal('', [{type: 'image', value: 'assets/wartorn/ue_designer.png'} ])">
+            <img src="assets/wartorn/ue_designer.png" alt="ue5 designer" class="responsive">
+        </div>
+
+        <div id="img_cursor" (click)="openModal('', [{type: 'image', value: 'assets/wartorn/ue_blueprints.png'} ])">
+            <img src="assets/wartorn/ue_blueprints.png" alt="ue5 blueprints" class="responsive">
+        </div>
+
+    </section>
+
+
+
+
+
+
+<app-viewmoremenu></app-viewmoremenu>
+<app-projectpopup [isVisible]="isModalVisible" [title]="modalTitle" [content]="modalContent" (closeModal)="closeModal()"></app-projectpopup>
+<app-footer></app-footer>
+
+</div>
+
+</body>
+
+</html>
+
+
+
+
+
