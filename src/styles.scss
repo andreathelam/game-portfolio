@@ -46,7 +46,7 @@ body, html {
 /* small screen*/
 @media screen and (max-width: 599px) {
     body {
-        margin: 8px 15px;
+        margin: 8px 30px;
     }
 
 
@@ -116,7 +116,7 @@ body, html {
 /* medium screen*/
 @media screen and (min-width: 600px) and (max-width: 991px) {
     body {
-        margin: 10px 30px;
+        margin: 10px 60px;
     }
     h1 {
         font-family: Nunito-Bold;
@@ -186,10 +186,10 @@ body, html {
     }
 
     .page_container {
-        margin-left: 10%;
-        margin-right: 10%;
+        margin-left: 14%;
+        margin-right: 14%;
         height: 100%;
-        width: 80%;
+        width: 72%;
     }
 
   
@@ -359,17 +359,17 @@ body, html {
 @media screen and (min-width: 1900px) {
 
     body {
-        margin-left: 10%;
-        margin-right: 10%;
+        margin-left: 14%;
+        margin-right: 14%;
         height: 100%;
-        width: 80%;
+        width: 72%;
     }
 
     .page_container {
-        margin-left: 10%;
-        margin-right: 10%;
+        margin-left: 14%;
+        margin-right: 14%;
         height: 100%;
-        width: 80%;
+        width: 72%;
     }
 
 
