@@ -93,13 +93,24 @@
     <!-- VISUAL DESIGN GUIDE -->
     <section class="section" href="user" id="user">
         <div class="banner">
-            <h1 style="color: #451107;">UI Design Guide</h1>
+            <h1 style="color: #451107;">UI Design System</h1>
             <hr>    
         </div>
 
-        <p>The UI style guide I put together defined the typography, colors, textures, and elements such as frames, buttons, and tooltips.
+        <p>The UI style system I put together defined the typography, colors, textures, and elements such as frames, buttons, and tooltips.
         </p>
-        <div id="img_cursor" (click)="openModal('', [{type: 'image', value: 'assets/wartorn/wartorn_style_guide.png'} ])">
+        <div id="img_cursor" (click)="openModal('', [
+            {type: 'image', value: 'assets/wartorn/01Title.png'}, 
+            {type: 'image', value: 'assets/wartorn/02Art Direction.png'},
+            {type: 'image', value: 'assets/wartorn/03Core Concepts.png'}, 
+            {type: 'image', value: 'assets/wartorn/04Typography.png'},
+            {type: 'image', value: 'assets/wartorn/05Colors.png'}, 
+            {type: 'image', value: 'assets/wartorn/06Textures.png'},
+            {type: 'image', value: 'assets/wartorn/07Buttons.png'}, 
+            {type: 'image', value: 'assets/wartorn/08Long Buttons.png'},
+            {type: 'image', value: 'assets/wartorn/09Health Bars.png'}, 
+            {type: 'image', value: 'assets/wartorn/010Frames.png'} ])">
+
             <img src="assets/wartorn/wartorn_style_guide.png" alt="expedition redesign" class="responsive">
         </div>
 
@@ -114,6 +125,8 @@
             <h1 style="color: #451107;">Squad Management Screen</h1>
             <hr>    
         </div>
+
+        <p>With the Squad Management menu, players should be able to easily view the details, progress, and status of all their squads in order to make decisions such as recruiting, training, and upgrading.</p>
         
         <div id="img_cursor" (click)="openModal('', [{type: 'image', value: 'assets/wartorn/Showcase_Squad_Inspector.png'} ])">
             <img src="assets/wartorn/Showcase_Squad_Inspector.png" alt="mocks" class="responsive">
